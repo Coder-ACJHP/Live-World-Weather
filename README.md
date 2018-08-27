@@ -14,7 +14,7 @@ Live weather, forecast application, include all cities with detailed information
 </p>
 <div align="center">
   <h3>Screen shots : </h3>
-  <img src="https://github.com/Coder-ACJHP/IOS-Live-Weather/blob/master/Coder%20Weather/Assets.xcassets/Design.png">
+  <img src="https://github.com/Coder-ACJHP/Live-World-Weather/blob/master/Coder%20Weather/Assets.xcassets/Design.png">
 </div>
 
 
