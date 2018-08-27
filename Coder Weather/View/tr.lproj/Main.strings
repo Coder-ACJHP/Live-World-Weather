@@ -1,0 +1,186 @@
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "2m7-WO-eQh"; */
+"2m7-WO-eQh.text" = "32 ";
+
+/* Class = "UILabel"; text = "Rate the application"; ObjectID = "2tD-iM-T8L"; */
+"2tD-iM-T8L.text" = "Rate the application";
+
+/* Class = "UINavigationItem"; title = "City detail"; ObjectID = "81s-fP-gfK"; */
+"81s-fP-gfK.title" = "City detail";
+
+/* Class = "UILabel"; text = "You can contact with me from :"; ObjectID = "8w4-n5-FkY"; */
+"8w4-n5-FkY.text" = "You can contact with me from :";
+
+/* Class = "UILabel"; text = "25.03.2018"; ObjectID = "C4P-cH-Ihi"; */
+"C4P-cH-Ihi.text" = "25.03.2018";
+
+/* Class = "UILabel"; text = "Change background wallpaper"; ObjectID = "CHe-gF-YVm"; */
+"CHe-gF-YVm.text" = "Change background wallpaper";
+
+/* Class = "UILabel"; text = "08:32 PM"; ObjectID = "Ccp-XI-i9D"; */
+"Ccp-XI-i9D.text" = "08:32 PM";
+
+/* Class = "UIViewController"; title = "Settings"; ObjectID = "Cy7-Dh-t3K"; */
+"Cy7-Dh-t3K.title" = "Settings";
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "Dqf-ou-trN"; */
+"Dqf-ou-trN.text" = "32 ";
+
+/* Class = "UILabel"; text = "Get results if :"; ObjectID = "E0G-cl-XYL"; */
+"E0G-cl-XYL.text" = "Get results if :";
+
+/* Class = "UILabel"; text = "45 "; ObjectID = "ElW-vy-jCy"; */
+"ElW-vy-jCy.text" = "45 ";
+
+/* Class = "UILabel"; text = "NEW YORK US"; ObjectID = "Euo-OS-hk5"; */
+"Euo-OS-hk5.text" = "NEW YORK US";
+
+/* Class = "UILabel"; text = "Sunday, Jun 13"; ObjectID = "J0h-EU-6rz"; */
+"J0h-EU-6rz.text" = "Sunday, Jun 13";
+
+/* Class = "UILabel"; text = "5.2MS"; ObjectID = "O4D-bV-ILc"; */
+"O4D-bV-ILc.text" = "5.2MS";
+
+/* Class = "UILabel"; text = "13:35PM"; ObjectID = "OQh-eD-CP9"; */
+"OQh-eD-CP9.text" = "13:35PM";
+
+/* Class = "UILabel"; text = "Auto change background image"; ObjectID = "OZ6-0g-R6T"; */
+"OZ6-0g-R6T.text" = "Auto change background image";
+
+/* Class = "UILabel"; text = "About me : "; ObjectID = "OkU-5z-CnF"; */
+"OkU-5z-CnF.text" = "About me : ";
+
+/* Class = "UILabel"; text = "22%"; ObjectID = "PcA-sM-i4s"; */
+"PcA-sM-i4s.text" = "22%";
+
+/* Class = "UILabel"; text = "25.03.2018"; ObjectID = "QqY-z3-2Op"; */
+"QqY-z3-2Op.text" = "25.03.2018";
+
+/* Class = "UILabel"; text = "25.03.2018"; ObjectID = "Srw-11-s4Y"; */
+"Srw-11-s4Y.text" = "25.03.2018";
+
+/* Class = "UILabel"; text = "Contact me"; ObjectID = "TCw-da-0Qv"; */
+"TCw-da-0Qv.text" = "Contact me";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "Tzl-dD-irH"; */
+"Tzl-dD-irH.text" = "°C";
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "UmT-Me-eh7"; */
+"UmT-Me-eh7.text" = "32 ";
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "VvA-px-9PE"; */
+"VvA-px-9PE.text" = "32 ";
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "Xes-a8-hnC"; */
+"Xes-a8-hnC.text" = "32 ";
+
+/* Class = "UILabel"; text = "NEW YORK US"; ObjectID = "ZP3-MS-810"; */
+"ZP3-MS-810.text" = "NEW YORK US";
+
+/* Class = "UILabel"; text = "1032"; ObjectID = "ax1-Lz-UJt"; */
+"ax1-Lz-UJt.text" = "1032";
+
+/* Class = "UIButton"; normalTitle = "Show all cities list"; ObjectID = "b1x-qF-Z2k"; */
+"b1x-qF-Z2k.normalTitle" = "Show all cities list";
+
+/* Class = "UILabel"; text = "CHOOSE YOUR CITY"; ObjectID = "bTa-nC-ttJ"; */
+"bTa-nC-ttJ.text" = "CHOOSE YOUR CITY";
+
+/* Class = "UILabel"; text = "Detail"; ObjectID = "blE-r0-9HM"; */
+"blE-r0-9HM.text" = "Detail";
+
+/* Class = "UILabel"; text = "32 "; ObjectID = "cz1-v0-eHk"; */
+"cz1-v0-eHk.text" = "32 ";
+
+/* Class = "UISegmentedControl"; dQL-O8-fWg.segmentTitles[0] = "Contains"; ObjectID = "dQL-O8-fWg"; */
+"dQL-O8-fWg.segmentTitles[0]" = "Contains";
+
+/* Class = "UISegmentedControl"; dQL-O8-fWg.segmentTitles[1] = "Equals"; ObjectID = "dQL-O8-fWg"; */
+"dQL-O8-fWg.segmentTitles[1]" = "Equals";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "dUp-QJ-6eS"; */
+"dUp-QJ-6eS.text" = "Title";
+
+/* Class = "UILabel"; text = "Push notifications"; ObjectID = "dbu-O2-hWz"; */
+"dbu-O2-hWz.text" = "Push notifications";
+
+/* Class = "UILabel"; text = "25.03.2018"; ObjectID = "e1R-v8-Uge"; */
+"e1R-v8-Uge.text" = "25.03.2018";
+
+/* Class = "UILabel"; text = "14%"; ObjectID = "e8J-zQ-tHO"; */
+"e8J-zQ-tHO.text" = "14%";
+
+/* Class = "UILabel"; text = "°C"; ObjectID = "f0y-Lx-p8f"; */
+"f0y-Lx-p8f.text" = "°C";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "gHm-eO-cgM"; */
+"gHm-eO-cgM.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "APPLICATION SETTINGS"; ObjectID = "iOb-YR-MbK"; */
+"iOb-YR-MbK.text" = "APPLICATION SETTINGS";
+
+/* Class = "UILabel"; text = "Software, code 👨🏻‍💻 and learning new technologies lover 😊"; ObjectID = "iPX-sl-QF8"; */
+"iPX-sl-QF8.text" = "Software, code 👨🏻‍💻 and learning new technologies lover 😊";
+
+/* Class = "UILabel"; text = "Terms & conditions"; ObjectID = "iiO-4r-ulr"; */
+"iiO-4r-ulr.text" = "Terms & conditions";
+
+/* Class = "UINavigationItem"; title = "Coder Weather"; ObjectID = "k9S-OO-cTr"; */
+"k9S-OO-cTr.title" = "Coder Weather";
+
+/* Class = "UILabel"; text = "About application"; ObjectID = "kaY-HK-8MG"; */
+"kaY-HK-8MG.text" = "About application";
+
+/* Class = "UIViewController"; title = "Wallpapers"; ObjectID = "lTQ-Pk-RLC"; */
+"lTQ-Pk-RLC.title" = "Wallpapers";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "lgU-SD-oR6"; */
+"lgU-SD-oR6.normalTitle" = "CANCEL";
+
+/* Class = "UILabel"; text = "06:55 AM"; ObjectID = "lnO-WB-zyq"; */
+"lnO-WB-zyq.text" = "06:55 AM";
+
+/* Class = "UILabel"; text = "Privacy policy"; ObjectID = "mGZ-cC-sgu"; */
+"mGZ-cC-sgu.text" = "Privacy policy";
+
+/* Class = "UIButton"; normalTitle = "SHOW MORE DETAILS"; ObjectID = "oov-IB-RGd"; */
+"oov-IB-RGd.normalTitle" = "SHOW MORE DETAILS";
+
+/* Class = "UILabel"; text = "25.03.2018"; ObjectID = "pYC-rX-PAy"; */
+"pYC-rX-PAy.text" = "25.03.2018";
+
+/* Class = "UIBarButtonItem"; title = "Main page"; ObjectID = "q8L-BY-Q0t"; */
+"q8L-BY-Q0t.title" = "Main page";
+
+/* Class = "UIButton"; normalTitle = "📬 hexa.octabin@gmail.com"; ObjectID = "qrb-21-IzX"; */
+"qrb-21-IzX.normalTitle" = "📬 hexa.octabin@gmail.com";
+
+/* Class = "UILabel"; text = "Coder ACJHP"; ObjectID = "rGA-Ba-qWF"; */
+"rGA-Ba-qWF.text" = "Coder ACJHP";
+
+/* Class = "UILabel"; text = "INFORMATIONS"; ObjectID = "saf-OZ-PN8"; */
+"saf-OZ-PN8.text" = "INFORMATIONS";
+
+/* Class = "UILabel"; text = "Access 209,569 city around world !"; ObjectID = "uZx-8f-28v"; */
+"uZx-8f-28v.text" = "Access 209,569 city around world !";
+
+/* Class = "UILabel"; text = "Preferred image size : (2436 x 1242) pixel"; ObjectID = "un3-gi-mwP"; */
+"un3-gi-mwP.text" = "Preferred image size : (2436 x 1242) pixel";
+
+/* Class = "UIViewController"; title = "About Me"; ObjectID = "v60-l2-5Mn"; */
+"v60-l2-5Mn.title" = "About Me";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "yOV-Uf-ToT"; */
+"yOV-Uf-ToT.title" = "Item";
+
+/* Class = "UIViewController"; title = "Forecast detail"; ObjectID = "ygw-IW-iL9"; */
+"ygw-IW-iL9.title" = "Forecast detail";
+
+/* Class = "UILabel"; text = "(Web & Mobile Developer)"; ObjectID = "ymu-fh-Uiw"; */
+"ymu-fh-Uiw.text" = "(Web & Mobile Developer)";
+
+/* Class = "UISearchBar"; placeholder = "Search via city name"; ObjectID = "yqh-su-ohc"; */
+"yqh-su-ohc.placeholder" = "Search via city name";
+
+/* Class = "UILabel"; text = "Mostly sunny"; ObjectID = "ysT-qa-fbL"; */
+"ysT-qa-fbL.text" = "Mostly sunny";
