@@ -1,0 +1,6 @@
+framework module Pods_Live_World_Weather {
+  umbrella header "Pods-Live World Weather-umbrella.h"
+
+  export *
+  module * { export * }
+}
