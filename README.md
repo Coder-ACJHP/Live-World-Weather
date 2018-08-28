@@ -1,10 +1,11 @@
-# Live-Weather (for Ios devices) 🌤 🌦 🌧 🌩
-Live weather, forecast application, include all cities with detailed informations
- * All countries & cities in the world included. 
+# Live World Weather (for Ios devices) 🌤 🌦 🌧 🌩
+Live world weather, forecast app that include all cities with detailed informations
+ * More than 209,500 countries & cities in the world included. 
  * You can easily find your local weather by clicking Navigator button on header.
- * By clicking info button more forecast details for 5 days will appear.
- * For less than iPhone X screens scroll auto enabled for upper else.
- * All errors handled internet connection also.
+ * Show forecast details for 5 days by clicking info button.
+ * Add your favorite cities to favorite list.
+ * Compatible with all screens
+ * All errors handled.
 
 <h3>Used sources : </h3>
 <p>OpenMap Weather & Forecast api for more informations please visit : <a href="https://openweathermap.org/">https://openweathermap.org/</a></p>
@@ -14,7 +15,7 @@ Live weather, forecast application, include all cities with detailed information
 </p>
 <div align="center">
   <h3>Screen shots : </h3>
-  <img src="https://github.com/Coder-ACJHP/Live-World-Weather/blob/master/Coder%20Weather/Assets.xcassets/Design.png">
+  <img src="https://github.com/Coder-ACJHP/Live-World-Weather/blob/master/Live%20World%20Weather/Assets.xcassets/Design.jpeg">
 </div>
 
 
