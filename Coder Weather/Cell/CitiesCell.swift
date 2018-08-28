@@ -2,7 +2,7 @@
 //  CitiesCell.swift
 //  Coder Weather
 //
-//  Created by akademobi5 on 30.07.2018.
+//  Created by Coder ACJHP on 30.07.2018.
 //  Copyright © 2018 Coder ACJHP. All rights reserved.
 //
 

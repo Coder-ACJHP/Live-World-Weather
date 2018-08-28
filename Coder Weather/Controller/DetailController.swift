@@ -2,7 +2,7 @@
 //  DetailController.swift
 //  Coder Weather
 //
-//  Created by akademobi5 on 3.07.2018.
+//  Created by Coder ACJHP on 3.07.2018.
 //  Copyright © 2018 Coder ACJHP. All rights reserved.
 //
 

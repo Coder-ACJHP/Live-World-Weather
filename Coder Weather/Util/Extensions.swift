@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  Coder Weather
 //
-//  Created by akademobi5 on 9.08.2018.
+//  Created by Coder ACJHP on 9.08.2018.
 //  Copyright © 2018 Coder ACJHP. All rights reserved.
 //
 

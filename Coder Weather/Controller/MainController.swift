@@ -12,9 +12,7 @@ import MBProgressHUD
 
 class MainController: UIViewController {
 
-    var timer: Timer!
     var query: Int!
-    var wallpaper: UIImage!
     //These will use when getting location coordinates
     var currentLatitude: Int = 0
     var currentLongitude: Int = 0
@@ -36,6 +34,7 @@ class MainController: UIViewController {
     var citiesList = Array<Weather>()
     let userSettings = Setting.shared
     let changeWeatherIcon = ChangeWeatherIconManager()
+    let wallpaperManager = SetupWallpaperManager.shared
     
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -78,7 +77,8 @@ class MainController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        self.setupWallpaper()
+        self.wallpaperManager.setImageView(imgeView: self.backgroundWallpaperContainer)
+        self.wallpaperManager.setupWallpaper()
         self.scrollToTop()
     }
     
@@ -115,35 +115,11 @@ class MainController: UIViewController {
     }
     
     private func addLogoToNavbar() {
-        let imageView = UIImageView(image: UIImage(named: "Logo"))
+        let imageView = UIImageView(image: UIImage(named: "Logo-small"))
         imageView.contentMode = .scaleAspectFit
-        imageView.frame = CGRect(x: 0, y: 0, width: 130, height: 45)
+        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 45)
+        imageView.clipsToBounds = true
         self.navigationItem.titleView = imageView
-    }
-    
-    private func setupWallpaper() {
-        if !userSettings.getAutoChangeWallpaperStatus() {
-            let image: UIImage? = userSettings.getWallpaper()
-            if image != nil {
-                wallpaper = image
-            } else {
-                // Set default image
-                wallpaper = #imageLiteral(resourceName: "blue-cloud")
-            }
-            self.backgroundWallpaperContainer.image = wallpaper
-            
-        } else {
-            // Change wallpaper every 30 minutes
-            let oneHourInterval = TimeInterval(30 * 60)
-            self.timer = Timer.scheduledTimer(timeInterval: oneHourInterval, target: self, selector: #selector(autoChangeWallpaper), userInfo: nil, repeats: true)
-            timer.fire()
-        }
-    }
-    
-    @objc private func autoChangeWallpaper() {
-        UIView.animate(withDuration: 0.4) {
-            self.backgroundWallpaperContainer.image = self.staticDatas.imageList.random()
-        }
     }
     
     private func setupDateLabelText() {
@@ -317,7 +293,11 @@ class MainController: UIViewController {
             // Transfer current waether datas
             destinationController.cityWeather = transferableWeather
             // Transfer current wallpaper image
-            destinationController.transferableWallpaper = self.wallpaper
+            destinationController.transferableWallpaper = self.wallpaperManager.wallpaper
+            
+        } else if segue.identifier == "toFavorite" {
+             let destinationController = segue.destination as! FavoritesController
+             destinationController.transferableWallpaper = self.wallpaperManager.wallpaper
         }
     }
     

@@ -20,8 +20,12 @@
 		589DA7F220EB69FB00FBB761 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589DA7F120EB69FB00FBB761 /* DetailController.swift */; };
 		58A6C8652133DB130031DF19 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6C8642133DB130031DF19 /* FavoritesController.swift */; };
 		58A6C8672133DBBC0031DF19 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A6C8662133DBBC0031DF19 /* FavoriteCell.swift */; };
+		58A777EA21352F7700367019 /* CinzelDecorative-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58A777E521352E2300367019 /* CinzelDecorative-Black.ttf */; };
+		58A777EB21352F7700367019 /* CinzelDecorative-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58A777E621352E2400367019 /* CinzelDecorative-Bold.ttf */; };
+		58A777EC21352F7700367019 /* CinzelDecorative-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58A777E721352E2400367019 /* CinzelDecorative-Regular.ttf */; };
 		58B60A86212321DC0093E8B7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B60A85212321DC0093E8B7 /* SettingsController.swift */; };
 		58B60A88212324BE0093E8B7 /* ReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B60A87212324BE0093E8B7 /* ReviewManager.swift */; };
+		58C76FC32135659A00E43EFD /* SetupWallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C76FC22135659A00E43EFD /* SetupWallpaperManager.swift */; };
 		F22767B6211600D700C1F624 /* WallpaperController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22767B5211600D700C1F624 /* WallpaperController.swift */; };
 		F22767B82116018600C1F624 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22767B72116018600C1F624 /* ImageCell.swift */; };
 		F238A48820E7CFBC00E49365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F238A48720E7CFBC00E49365 /* AppDelegate.swift */; };
@@ -50,8 +54,12 @@
 		589DA7F120EB69FB00FBB761 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		58A6C8642133DB130031DF19 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		58A6C8662133DBBC0031DF19 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		58A777E521352E2300367019 /* CinzelDecorative-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Black.ttf"; sourceTree = "<group>"; };
+		58A777E621352E2400367019 /* CinzelDecorative-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Bold.ttf"; sourceTree = "<group>"; };
+		58A777E721352E2400367019 /* CinzelDecorative-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CinzelDecorative-Regular.ttf"; sourceTree = "<group>"; };
 		58B60A85212321DC0093E8B7 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		58B60A87212324BE0093E8B7 /* ReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewManager.swift; sourceTree = "<group>"; };
+		58C76FC22135659A00E43EFD /* SetupWallpaperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupWallpaperManager.swift; sourceTree = "<group>"; };
 		BC8737BCDC967DDC62489C92 /* Pods-Coder Weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coder Weather.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coder Weather/Pods-Coder Weather.release.xcconfig"; sourceTree = "<group>"; };
 		DB6B42B91AAE5ED8A263A537 /* Pods-Coder Weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coder Weather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coder Weather/Pods-Coder Weather.debug.xcconfig"; sourceTree = "<group>"; };
 		F22767B5211600D700C1F624 /* WallpaperController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperController.swift; sourceTree = "<group>"; };
@@ -91,6 +99,34 @@
 				F2D8E91D20EBF50600335466 /* AboutMeControllerViewController.swift */,
 			);
 			path = SettingTabs;
+			sourceTree = "<group>";
+		};
+		58A777E421352E0C00367019 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				58A777E521352E2300367019 /* CinzelDecorative-Black.ttf */,
+				58A777E621352E2400367019 /* CinzelDecorative-Bold.ttf */,
+				58A777E721352E2400367019 /* CinzelDecorative-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		58A777E821352E2900367019 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				5861AA71212463850085FC54 /* AboutApp.html */,
+				5861AA6E212463030085FC54 /* Privacy.html */,
+				5861AA6D212463030085FC54 /* TermsAndConditions.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
+		58A777E921352E3600367019 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				F238A4A020E7EFC300E49365 /* city.list.json */,
+			);
+			path = Json;
 			sourceTree = "<group>";
 		};
 		9F04463B80ECC2E0B288D37B /* Pods */ = {
@@ -173,6 +209,7 @@
 				582FDF74211C801100653A94 /* Extensions.swift */,
 				5861AA62212416EC0085FC54 /* StaticDatas.swift */,
 				5861AA6421241E3F0085FC54 /* ChangeWeatherIconManager.swift */,
+				58C76FC22135659A00E43EFD /* SetupWallpaperManager.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -180,11 +217,10 @@
 		F238A49F20E7EFA900E49365 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				F238A4A020E7EFC300E49365 /* city.list.json */,
+				58A777E921352E3600367019 /* Json */,
+				58A777E821352E2900367019 /* Html */,
+				58A777E421352E0C00367019 /* Font */,
 				F238A4A220E7EFFE00E49365 /* LocationsNameUtil.swift */,
-				5861AA71212463850085FC54 /* AboutApp.html */,
-				5861AA6E212463030085FC54 /* Privacy.html */,
-				5861AA6D212463030085FC54 /* TermsAndConditions.html */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -278,9 +314,12 @@
 			files = (
 				F238A49220E7CFD700E49365 /* LaunchScreen.storyboard in Resources */,
 				5861AA6F212463030085FC54 /* TermsAndConditions.html in Resources */,
+				58A777EC21352F7700367019 /* CinzelDecorative-Regular.ttf in Resources */,
 				F238A4A120E7EFC300E49365 /* city.list.json in Resources */,
+				58A777EA21352F7700367019 /* CinzelDecorative-Black.ttf in Resources */,
 				5861AA70212463030085FC54 /* Privacy.html in Resources */,
 				F238A48F20E7CFD700E49365 /* Assets.xcassets in Resources */,
+				58A777EB21352F7700367019 /* CinzelDecorative-Bold.ttf in Resources */,
 				5861AA72212463850085FC54 /* AboutApp.html in Resources */,
 				F238A48D20E7CFBC00E49365 /* Main.storyboard in Resources */,
 			);
@@ -342,6 +381,7 @@
 				58B60A88212324BE0093E8B7 /* ReviewManager.swift in Sources */,
 				F238A49E20E7EC1400E49365 /* Weather.swift in Sources */,
 				589DA7F220EB69FB00FBB761 /* DetailController.swift in Sources */,
+				58C76FC32135659A00E43EFD /* SetupWallpaperManager.swift in Sources */,
 				584F244C210F20E400A90270 /* CitiesCell.swift in Sources */,
 				58B60A86212321DC0093E8B7 /* SettingsController.swift in Sources */,
 				5861AA68212432470085FC54 /* WebViewController.swift in Sources */,

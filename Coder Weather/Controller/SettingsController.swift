@@ -2,7 +2,7 @@
 //  SettingsController.swift
 //  Coder Weather
 //
-//  Created by akademobi5 on 14.08.2018.
+//  Created by Coder ACJHP on 14.08.2018.
 //  Copyright © 2018 Coder ACJHP. All rights reserved.
 //
 

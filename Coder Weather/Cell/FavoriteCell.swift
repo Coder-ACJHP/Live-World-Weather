@@ -11,6 +11,7 @@ import UIKit
 class FavoriteCell: UITableViewCell {
 
     @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var countryNameLabel: UILabel!
     @IBOutlet weak var termperatureLabel: UILabel!
     @IBOutlet weak var iconHolder: UIImageView!
     
@@ -23,9 +24,6 @@ class FavoriteCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-    }
-    @IBAction func removePressed(_ sender: UIButton) {
-        self.isHidden = true
     }
     
 }

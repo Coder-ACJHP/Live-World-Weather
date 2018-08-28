@@ -2,7 +2,7 @@
 //  FavoritesController.swift
 //  Coder Weather
 //
-//  Created by akademobi5 on 27.08.2018.
+//  Created by Coder ACJHP on 27.08.2018.
 //  Copyright © 2018 Coder ACJHP. All rights reserved.
 //
 
@@ -20,6 +20,7 @@ class FavoritesController: UIViewController {
     var navigationBarHeight: CGFloat!
     // Define spinner
     var spinnerActivity: MBProgressHUD?
+    var transferableWallpaper: UIImage!
     var getResultsIfContains = true
     var filteredList = [Weather]()
     var favoriteListAsId = [Int]()
@@ -63,6 +64,10 @@ class FavoritesController: UIViewController {
     }
     
     private func basicSetup() {
+        
+        // Setup wallpaper that transfered from main view
+        backgroundImageHolder.image = transferableWallpaper
+        
         // Prepopulate picker array
         citiesList = LocationsNameUtil.sharedInstance.getCitieslist()
         
@@ -96,7 +101,7 @@ class FavoritesController: UIViewController {
                 self.fetchData(queryAddress: newQuery)
             }
         } else {
-            showCustomErrorMsgWithAlert(errorMessage: "Favorite list is empty!")
+            showCustomErrorMsgWithAlert("Suggestion", errorMessage: "Favorite list is empty!\nAdd your favorite cities to the list.")
         }
     }
     
@@ -147,7 +152,7 @@ class FavoritesController: UIViewController {
                                 
                                 let sys = jsonResult["sys"]
                                 if let country = sys!["country"] as? String {
-                                    cityWeather.cityName = cityWeather.cityName + " " + country
+                                    cityWeather.countryName = country
                                 }
 
                                 self.favoriteList.append(cityWeather)
@@ -160,9 +165,9 @@ class FavoritesController: UIViewController {
                      * This is specific error code throwing when the api key is invalid or
                      * requesting query with unregistered key (from 9 October 2015 by Open Map Weather)
                      */
-                    self.showCustomErrorMsgWithAlert(errorMessage: "Invalid api key!\nPlease add your own key or register.")
+                    self.showCustomErrorMsgWithAlert("Error!", errorMessage: "Invalid api key!\nPlease add your own key or register.")
                 }else {
-                    self.showCustomErrorMsgWithAlert(errorMessage: "Server returned " + String(httpResponse.statusCode))
+                    self.showCustomErrorMsgWithAlert("Unknown error!", errorMessage: "Server returned " + String(httpResponse.statusCode))
                 }
             }
         }
@@ -249,8 +254,8 @@ class FavoritesController: UIViewController {
         }
     }
     
-    private func showCustomErrorMsgWithAlert(errorMessage: String) {
-        let alert = UIAlertController(title: "Warning", message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
+    private func showCustomErrorMsgWithAlert(_ headerTitle: String = "Warning", errorMessage: String) {
+        let alert = UIAlertController(title: headerTitle, message: errorMessage, preferredStyle: UIAlertControllerStyle.alert)
         let cancelButton = UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.cancel, handler: nil)
         alert.addAction(cancelButton)
         self.present(alert, animated: true, completion: nil)
@@ -265,7 +270,6 @@ class FavoritesController: UIViewController {
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
         showPopover()
-        loadDataWithProgressBar()
     }
     
     // Popover cancel button action
@@ -295,6 +299,7 @@ extension FavoritesController: UITableViewDelegate, UITableViewDataSource, UISea
             var cell = FavoriteCell()
             cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCell", for: indexPath) as! FavoriteCell
             cell.cityNameLabel.text = favoriteList[indexPath.row].cityName
+            cell.countryNameLabel.text = favoriteList[indexPath.row].countryName
             cell.termperatureLabel.text = favoriteList[indexPath.row].temperature
             changeWeatherIcon.changeDayIcon(imageContainer: cell.iconHolder, iconCode: favoriteList[indexPath.row].iconCode)
             return cell
@@ -317,20 +322,8 @@ extension FavoritesController: UITableViewDelegate, UITableViewDataSource, UISea
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if tableView == favoriteTable {
+        if tableView == dataTable {
             
-            let choosenCell = tableView.cellForRow(at: indexPath) as! FavoriteCell
-            favoriteListAsId.removeAll(keepingCapacity: false)
-            favoriteList.enumerated().forEach { (index, element) in
-                favoriteListAsId.append(element.id)
-                if element.cityName == choosenCell.cityNameLabel.text {
-                    favoriteList.remove(at: index)
-                }
-            }
-            userDefaults.setFavoriteList(favoriteList: favoriteListAsId)
-            self.favoriteTable.reloadData()
-            
-        } else {
             let choosenCell = tableView.cellForRow(at: indexPath) as! CitiesCell
             let choosenCityName = choosenCell.leftLabel.text
             
@@ -359,6 +352,26 @@ extension FavoritesController: UITableViewDelegate, UITableViewDataSource, UISea
             self.searchbar.endEditing(true)
             // Hide popover
             self.hidePopover()
+            
+            loadDataWithProgressBar()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            let choosenCell = tableView.cellForRow(at: indexPath) as! FavoriteCell
+            favoriteListAsId.removeAll(keepingCapacity: false)
+            favoriteList.enumerated().forEach { (index, element) in
+                
+                if element.cityName == choosenCell.cityNameLabel.text {
+                    favoriteList.remove(at: index)
+                } else {
+                    favoriteListAsId.append(element.id)
+                }
+            }
+            userDefaults.setFavoriteList(favoriteList: favoriteListAsId)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
     
